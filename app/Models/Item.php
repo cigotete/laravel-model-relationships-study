@@ -12,4 +12,8 @@ class Item extends Model
     public function orders() {
         return $this->belongsToMany(Order::class);
     }
+
+    public function subCategory() {
+        return $this->belongsTo(SubCategory::class);
+    }
 }
